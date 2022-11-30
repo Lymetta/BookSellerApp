@@ -214,9 +214,10 @@ namespace KnyguApp1
             SeleniumMethods.Click(driver, "XPath", "/html/body/div[3]/div[2]/div[1]/div[2]/div[2]/button[1]");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
 
-            SeleniumMethods.EnterText(driver, "Id", "username", "SandyPandas");
+            // username and password have been removed
+            SeleniumMethods.EnterText(driver, "Id", "username", "USERNAME");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
-            SeleniumMethods.EnterText(driver, "Id", "password", "Pinkstudy36+");
+            SeleniumMethods.EnterText(driver, "Id", "password", "PASSWORD");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
             
             SeleniumMethods.Click(driver, "XPath", "/html/body/main/div/div/div/div[2]/div/div/div/section[2]/form/div/div[3]/button");
@@ -338,9 +339,11 @@ namespace KnyguApp1
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
             SeleniumMethods.Click(driver, "XPath", "/html/body/main/div/section/div/div[2]/section/div/div[2]/div/div[2]/div/span[1]/span");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
-            SeleniumMethods.EnterText(driver, "Id", "username", "SandyPanda");
+            
+            // username and password have been removed
+            SeleniumMethods.EnterText(driver, "Id", "username", "USERNAME");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
-            SeleniumMethods.EnterText(driver, "Id", "password", "Pinkstudy36+");
+            SeleniumMethods.EnterText(driver, "Id", "password", "PASSWORD");
             Thread.Sleep(1000);
             SeleniumMethods.Click(driver, "XPath", "/html/body/main/div/section/div/div[2]/section/div/div[2]/div/div[2]/form/div[3]/div/div/button");
             new WebDriverWait(driver, TimeSpan.FromSeconds(120)).Until(ExpectedConditions.ElementExists(By.Id("title")));
